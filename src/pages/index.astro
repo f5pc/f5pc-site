@@ -1,0 +1,529 @@
+---
+import "../styles/global.css";
+
+const navItems = [
+  { label: "Services", href: "#services" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Coverage", href: "#coverage" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#contact" },
+];
+---
+
+<html lang="en" class="scroll-smooth scroll-pt-28">
+  <head>
+ <meta charset="UTF-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
+
+<title>F5PC IT Services | Los Angeles PC Repair & IT Services</title>
+<link rel="icon" type="image/png" href="/favicon.png" />
+
+<meta
+  name="description"
+  content="Professional PC repair, networking, malware removal, remote support, and IT services in Los Angeles."
+/>
+
+<meta
+  name="keywords"
+  content="PC repair Los Angeles, IT support, computer repair, malware removal, networking, remote support"
+/>
+
+<meta name="author" content="F5PC IT Services" />
+
+<meta property="og:title" content="F5PC IT Services" />
+
+<meta
+  property="og:description"
+  content="Professional PC repair and IT support services in Los Angeles."
+/>
+
+<meta property="og:type" content="website" />
+
+<meta property="og:image" content="/preview.jpg" />
+
+<meta name="theme-color" content=#020617" />
+  </head>
+
+  <body class="bg-zinc-950 text-white antialiased">
+  <!-- Navigation -->
+<header class="sticky top-0 z-50 border-b border-white/5 bg-black/55 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+    <a href="/" class="flex items-center">
+      <img
+        src="/images/logo.png"
+        alt="F5PC IT Services"
+        class="h-10 w-auto md:h-16"
+      />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden items-center gap-6 md:flex">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-sm font-medium uppercase tracking-wide text-zinc-300 transition hover:text-cyan-400"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <details class="relative md:hidden">
+      <summary class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-xl border border-white/10 text-xl text-white transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-500/10 hover:text-cyan-300">
+        ☰
+      </summary>
+
+      <div class="absolute right-0 mt-3 w-52 rounded-2xl border border-white/10 bg-zinc-950 p-3 shadow-2xl">
+        {
+          navItems.map((item) => (
+            <a
+  href={item.href}
+  onclick="this.closest('details').removeAttribute('open')"
+              class="block rounded-xl px-4 py-3 text-sm text-zinc-300 transition hover:bg-white/5 hover:text-cyan-400"
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </div>
+    </details>
+  </div>
+</header>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden fade-up">
+	<div class="absolute left-[-10rem] top-20 h-[28rem] w-[28rem] rounded-full bg-cyan-500/10 blur-3xl"></div>
+
+<div class="absolute right-[-8rem] top-40 h-[24rem] w-[24rem] rounded-full bg-cyan-400/10 blur-3xl animate-pulse"></div>
+<div class="absolute left-[20%] bottom-[-10rem] h-[22rem] w-[22rem] rounded-full bg-cyan-300/5 blur-3xl"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-cyan-500/10 to-transparent"></div>
+      <div class="absolute left-1/2 top-1/3 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl animate-pulse"></div>
+
+      <div class="mx-auto max-w-7xl px-6 py-28 md:py-36">
+        <div class="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+  <div class="max-w-3xl">
+          <p class="mb-4 text-sm uppercase tracking-[0.25em] text-cyan-400">
+            Los Angeles IT Services
+          </p>
+
+          <h1 class="text-5xl font-black leading-tight tracking-tight md:text-7xl">
+            Fast, Professional
+            <span class="text-cyan-400"> PC & IT Support</span>
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
+            On-site and remote computer repair, networking, troubleshooting,
+            upgrades, malware cleanup, and IT support for homes and businesses.
+          </p>
+<div class="relative z-20 mt-10 flex flex-wrap gap-4">
+
+  <a
+    href="#contact"
+   class="inline-flex items-center justify-center rounded-2xl border border-cyan-400/60 bg-slate-950 px-8 py-4 text-base font-black text-cyan-100 shadow-lg shadow-cyan-950/40 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-950 hover:text-white hover:shadow-xl hover:shadow-cyan-500/20 active:scale-95"
+  >
+    Book Service
+  </a>
+
+  <a
+    href="#pricing"
+    class="inline-flex items-center justify-center rounded-2xl border border-cyan-300/60 bg-cyan-950/40 px-8 py-4 text-base font-black text-cyan-100 shadow-lg shadow-cyan-950/30 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200 hover:bg-cyan-800/60 hover:text-white hover:shadow-xl hover:shadow-cyan-400/20 active:scale-95"
+  >
+    View Pricing
+  </a>
+
+</div>
+		  </div>
+
+  <div class="hidden lg:block">
+    <div class="rounded-3xl border border-cyan-400/20 bg-white/5 p-6 shadow-2xl shadow-cyan-500/10 backdrop-blur">
+     <div class="mb-6 flex items-center justify-between">
+  <div>
+    <p class="text-xs uppercase tracking-[0.25em] text-cyan-400">
+      System Status
+    </p>
+
+    <h3 class="mt-2 text-2xl font-bold">
+      Diagnostics Ready
+    </h3>
+  </div>
+
+  <div class="h-3 w-3 rounded-full bg-cyan-400 shadow-lg shadow-cyan-400/60"></div>
+</div>
+
+      <div class="space-y-4">
+        <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-zinc-300">PC Repair</span>
+            <span class="text-cyan-400">Online</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-zinc-300">WiFi & Network</span>
+            <span class="text-cyan-400">Available</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-zinc-300">Remote Support</span>
+            <span class="text-cyan-400">Ready</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+        <div class="rounded-2xl bg-cyan-500/10 p-4">
+          <p class="text-2xl font-black text-cyan-400">24h</p>
+          <p class="mt-1 text-xs text-zinc-400">Response</p>
+        </div>
+
+        <div class="rounded-2xl bg-cyan-500/10 p-4">
+          <p class="text-2xl font-black text-cyan-400">LA</p>
+          <p class="mt-1 text-xs text-zinc-400">Local</p>
+        </div>
+
+        <div class="rounded-2xl bg-cyan-500/10 p-4">
+          <p class="text-2xl font-black text-cyan-400">PC</p>
+          <p class="mt-1 text-xs text-zinc-400">Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="fade-up border-t border-white/10 py-14 md:py-20">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mb-14">
+          <p class="text-sm uppercase tracking-[0.25em] text-cyan-400">
+            Services
+          </p>
+
+          <h2 class="mt-3 text-4xl font-bold">
+            What We Help With
+          </h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+         
+        {
+  [
+    {
+      icon: "🖥️",
+      title: "PC Repair",
+      description:
+        "Hardware diagnostics, upgrades, overheating fixes, and troubleshooting.",
+    },
+    {
+      icon: "🛡️",
+      title: "Virus & Malware Removal",
+      description:
+        "Remove malware, ransomware, browser hijackers, and unwanted software safely.",
+    },
+    {
+      icon: "📶",
+      title: "Networking & WiFi",
+      description:
+        "Improve WiFi coverage, router setup, networking, and internet stability.",
+    },
+    {
+      icon: "⚙️",
+      title: "Custom PC Builds",
+      description:
+        "Custom gaming, workstation, and productivity PCs built to your specifications.",
+    },
+    {
+      icon: "💾",
+      title: "Data Recovery",
+      description:
+        "Recover lost files, damaged drives, and corrupted storage devices.",
+    },
+    {
+      icon: "🛰️",
+      title: "Remote IT Support",
+      description:
+        "Fast remote troubleshooting and software assistance without an on-site visit.",
+    },
+  ].map((service) => (
+    <div class="group rounded-3xl border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-500/[0.03] hover:shadow-[0_0_30px_rgba(34,211,238,0.08)]">
+      <div class="mb-5 flex items-center gap-4">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-cyan-500/10 text-2xl transition duration-300 group-hover:scale-110">
+          {service.icon}
+        </div>
+
+        <h3 class="text-lg font-bold text-white">
+          {service.title}
+        </h3>
+      </div>
+
+      <p class="text-zinc-400">
+        {service.description}
+      </p>
+    </div>
+  ))
+}
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="fade-up border-t border-white/10 py-14 md:py-20">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mb-14">
+          <p class="text-sm uppercase tracking-[0.25em] text-cyan-400">
+            Pricing
+          </p>
+
+          <h2 class="mt-3 text-4xl font-bold">
+            Simple Transparent Rates
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-500/[0.03] hover:shadow-xl hover:shadow-cyan-500/10">
+            <h3 class="text-2xl font-bold">Diagnostic</h3>
+
+            <p class="mt-4 text-5xl font-black">$49</p>
+
+            <p class="mt-4 text-zinc-400">
+              Full system diagnosis and issue evaluation.
+            </p>
+			<ul class="mt-6 space-y-3 text-sm text-zinc-300">
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Full system inspection
+</li>
+<li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Troubleshooting
+</li>
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Repair estimate included
+</li>
+</ul>
+          </div>
+
+          <div class="rounded-3xl border border-cyan-400/40 bg-cyan-500/[0.08] p-8 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/20">
+		  <span class="mb-4 inline-flex rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-cyan-300">
+  Most Popular
+</span>
+            <h3 class="text-2xl font-bold">Standard Service</h3>
+
+            <p class="mt-4 text-5xl font-black">$99</p>
+
+            <p class="mt-4 text-zinc-300">
+              Most common repairs and troubleshooting services.
+            </p>
+			<ul class="mt-6 space-y-3 text-sm text-zinc-300">
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Most common repairs
+</li>
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Sofware troubleshooting
+</li>
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Systm optimization
+</li>
+</ul>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-500/[0.03] hover:shadow-xl hover:shadow-cyan-500/10">
+            <h3 class="text-2xl font-bold">Business Support</h3>
+
+            <p class="mt-4 text-5xl font-black">Custom</p>
+
+            <p class="mt-4 text-zinc-400">
+              Networking, maintenance, and business IT solutions.
+            </p>
+			<ul class="mt-6 space-y-3 text-sm text-zinc-300">
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Network Support
+</li>
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Maintenance planning
+</li>
+  <li class="flex items-center gap-2">
+  <span class="text-cyan-400">✓</span>
+  Small business IT solutions
+</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage -->
+    <section id="coverage" class="fade-up border-t border-white/10 py-14 md:py-20">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-10">
+          <p class="text-sm uppercase tracking-[0.25em] text-cyan-400">
+            Service Area
+          </p>
+          <div class="mt-10 mx-auto max-w-2xl sm:max-w-3xl overflow-hidden rounded-3xl border border-cyan-400/20 bg-white/5 shadow-2xl shadow-cyan-500/10">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.551449988376!2d-118.27916372280356!3d34.00405337317524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c81350ff8d89%3A0xbfe58b0bec775975!2sF5PC%20Services!5e0!3m2!1sen!2sus!4v1778290015558!5m2!1sen!2sus"
+    width="100%"
+    height="220"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="w-full"
+  ></iframe>
+</div>
+
+          <h2 class="mt-4 text-center text-xl leading-snug md:text-4xl font-bold">
+            Serving Los Angeles & Surrounding Areas
+          </h2>
+
+          <p class="mx-auto mt-6 max-w-full text-center text-lg leading-8 text-zinc-400">
+            Mobile support available for residential and small business clients.
+            Remote assistance also available for many issues.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="fade-up border-t border-white/10 py-14 md:py-20">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="mb-14">
+          <p class="text-sm uppercase tracking-[0.25em] text-cyan-400">
+            FAQ
+          </p>
+
+          <h2 class="mt-3 text-4xl font-bold">
+            Common Questions
+          </h2>
+        </div>
+
+        <div class="space-y-6">
+          <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-500/[0.03] hover:shadow-xl hover:shadow-cyan-500/10">
+            <h3 class="text-xl font-semibold">
+              Do you offer on-site support?
+            </h3>
+
+            <p class="mt-3 text-zinc-400">
+              Yes. Mobile service is available throughout the Los Angeles area.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-500/[0.03] hover:shadow-xl hover:shadow-cyan-500/10">
+            <h3 class="text-xl font-semibold">
+              Do you work on Macs?
+            </h3>
+
+            <p class="mt-3 text-zinc-400">
+              Yes. We support both Windows and macOS systems.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-500/[0.03] hover:shadow-xl hover:shadow-cyan-500/10">
+            <h3 class="text-xl font-semibold">
+              Is remote support available?
+            </h3>
+
+            <p class="mt-3 text-zinc-400">
+              Absolutely. Many software-related issues can be solved remotely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+<section id="contact" class="fade-up border-t border-white/10 py-14 md:py-20">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mb-14 text-center">
+      <p class="text-sm uppercase tracking-[0.25em] text-cyan-400">
+        Contact
+      </p>
+
+      <h2 class="mt-4 text-5xl font-black">
+       <a
+  href="#contact"
+  class="mt-8 inline-flex rounded-xl border border-cyan-400/30 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
+>
+  Request Service
+</a>
+      </h2>
+
+      <p class="mt-6 text-lg text-zinc-400">
+        Please fill out the form below and we’ll get back to you as soon as possible.
+      </p>
+    </div>
+
+<div class="mx-auto max-w-4xl rounded-3xl border border-cyan-400/20 bg-black/40 p-4 shadow-2xl">
+<iframe
+  src="https://www.jotform.com/form/241430428115143"
+  class="h-[1900px] w-full rounded-2xl md:h-[1650px]"
+  style="width:100%;border:none;"
+  scrolling="no"
+></iframe>
+</div>
+</section>
+<footer class="border-t border-white/10 bg-black/20 py-10">
+  <div class="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-3">
+    <div>
+      <p class="text-base font-bold text-white">F5PC IT Services</p>
+      <p class="mt-3 max-w-sm text-sm leading-6 text-zinc-400">
+        PC repair, networking, malware removal, and remote IT support for Los Angeles homes and small businesses.
+      </p>
+    </div>
+
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+        Quick Links
+      </p>
+      <div class="mt-4 grid gap-2 text-sm text-zinc-400">
+        <a href="#services" class="transition hover:text-cyan-400">Services</a>
+        <a href="#pricing" class="transition hover:text-cyan-400">Pricing</a>
+        <a href="#coverage" class="transition hover:text-cyan-400">Coverage</a>
+        <a href="#faq" class="transition hover:text-cyan-400">FAQ</a>
+        <a href="#contact" class="transition hover:text-cyan-400">Contact</a>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+        Contact
+      </p>
+      <div class="mt-4 space-y-2 text-sm text-zinc-400">
+        <p>205 W Vernon Ave Los Angeles, CA 90037-2715</p>
+        <p>Remote Support Available</p>
+        <a href="tel:+13236093572" class="block transition hover:text-cyan-400">
+          (323) 609-3572
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto mt-8 max-w-7xl border-t border-white/10 px-6 pt-6 text-center text-xs text-zinc-600">
+    © 2026 F5PC IT Services. All rights reserved.
+  </div>
+</footer>
+<a
+  href="tel:+13236093572"
+  class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-cyan-500 text-2xl text-black shadow-2xl shadow-cyan-500/40 transition hover:scale-110 md:hidden"
+  aria-label="Call Now"
+>
+  ☎
+</a>
+  </body>
+</html>
