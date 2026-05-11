@@ -16,6 +16,16 @@ const images = [
     output: "./public/preview.webp",
     width: 1400,
   },
+  {
+    input: "./public/images/logo.png",
+    output: "./public/images/logo.webp",
+    width: 600,
+  },
+  {
+    input: "./public/images/f5pc-branding.png",
+    output: "./public/images/f5pc-branding.webp",
+    width: 1000,
+  }
 ];
 
 async function optimize() {
